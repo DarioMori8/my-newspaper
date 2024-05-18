@@ -1,0 +1,41 @@
+.container-fluid {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.custom-carousel .carousel-inner {
+  display: flex;
+}
+
+.custom-carousel .carousel-item {
+  justify-content: center;
+}
+
+.custom-carousel .col-2 {
+  width: 20%;
+}
+
+#custom-carousel .carousel-control-prev {
+  position: absolute !important;
+  left: 0 !important;
+  width: 5%;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#custom-carousel .carousel-control-next {
+  position: absolute !important;
+  right: 0 !important;
+  width: 5%;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 770px) {
+  .custom-carousel {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=FirstNotice.css.map */

@@ -1,0 +1,86 @@
+.subnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding: 0.2rem;
+  margin-top: -8px;
+}
+.subnav .logo-and-button {
+  display: flex;
+  align-items: center;
+}
+.subnav .subnav-items {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.subnav .subnav-items .subnav__item {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: text-decoration 0.3s ease;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+@media (max-width: 1100px) {
+  .subnav .subnav-items .subnav__item {
+    font-size: 0.8em;
+  }
+}
+.subnav .subnav-items .subnav__item:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1024px) {
+  .subnav {
+    display: none;
+  }
+}
+
+.fixed-subnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.fixed-subnav .subnav__item {
+  font-size: 0.8rem;
+}
+.fixed-subnav .navbar-brand {
+  justify-content: flex-start;
+}
+
+.empty-space {
+  flex-grow: 1;
+}
+
+.subnav_button {
+  margin-right: 0;
+}
+.subnav_button .btn1 {
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: #14774d;
+  transition: text-decoration 0.3s ease;
+  text-decoration: underline;
+}
+.subnav_button .right-aligned-btn {
+  float: right !important;
+  border: none;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: #00ffd0;
+  white-space: nowrap;
+}
+.subnav_button .right-aligned-btn:hover {
+  color: #00ffd0;
+}
+
+/*# sourceMappingURL=SecondaryNavBar.css.map */

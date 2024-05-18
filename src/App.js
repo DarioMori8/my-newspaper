@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import FirstNotice from "./Components/FirstNotice";
+import NavBar from "./Components/Navbar";
+import SecondaryNavBar from "./Components/SecondaryNavBar";
+import MainPage from "./Components/MainPage";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    // <> </> serve perchè la funzione rutern non può restituire più di un elemento. Wragmaent serve per aggirare il problema
+    return (
+      <>
+          <FirstNotice />
+          <NavBar />
+          <SecondaryNavBar/>
+          <MainPage/>
+      </>
+
   );
 }
 
