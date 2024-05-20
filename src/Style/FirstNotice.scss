@@ -32,7 +32,7 @@
 }
 $dimensione_massima: 770px;
 
-.custom-carousel {
+.container-fluid {
 
   @media screen and (max-width: #{$dimensione_massima}) {
     display: none;

@@ -1,6 +1,8 @@
 
 import Icon_Profile from '../images/Icon_Profile.png'
 import React, { useState, useEffect} from 'react';
+import '../Style/NavBar.scss'
+
 function NavBar() {
 
     // Definisce lo stato per gestire il layout della navbar
@@ -24,13 +26,13 @@ function NavBar() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const handleScroll = () => {
         if(navbarLayout ==='partial-horizontal'){
-            if (window.scrollY > 300) {
+            if (window.scrollY > 200) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
             }
         }else if(navbarLayout === 'partial-vertical' || navbarLayout === 'vertical') {
-            if (window.scrollY > 30) {
+            if (window.scrollY >= 0) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
@@ -48,6 +50,7 @@ function NavBar() {
         window.addEventListener('resize', handleResize);
         window.addEventListener('scroll', handleScroll);
 
+        handleResize();
         // Rimuove il listener quando il componente viene smontato per evitare memory leak
         return () => {
             window.removeEventListener('resize', handleResize);
@@ -57,7 +60,7 @@ function NavBar() {
 
     return (
         <>
-        <nav className= {`navbar ${isScrolled ? 'fixed-navbar' : ''}`}>
+        <nav className= {`navbar' ${isScrolled ? 'fixed-navbar' : ''}`}>
             {navbarLayout === 'horizontal' ? (
                 <nav className="horizontal-navbar">
                     <div className="navbar-brand">

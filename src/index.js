@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Style/FirstNotice.scss'
-import './Style/NavBar.scss'
 import './Style/SecondaryNavBar.scss'
 import './Style/FrontPageTop.scss'
 
