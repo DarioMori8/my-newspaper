@@ -11,11 +11,11 @@ class NewsCarousel extends Component {
         cardsPerSlide: 4, // Numero di card da visualizzare per ogni slide
         windowWidth: window.innerWidth, // Larghezza della finestra del browser
         cards: [
-            {id: 0, immagine: "https://placehold.co/224x128", title: 'U.S. NEWS', desc: 'Harvey Weinstein Hospitalized After His Return To New York From Upstate Prison'},
-            {id: 1, immagine: "https://placehold.co/224x128", title: 'POLITICS', desc: "Bernie Sanders Unleashes Fiery Comeback To Netanyahu's Antisemitism Accusations"},
-            {id: 2, immagine: "https://placehold.co/224x128", title: 'WORLD NEWS', desc: 'Hamas Is Reviewing An Israel Proposal For Gaza Cease-Fire, As Rafah Offensive Looms'},
-            {id: 3, immagine: "https://placehold.co/224x128", title: 'POLITICS', desc: "Chants Of 'Shame On You' Greet Guests At WH Correspondents' Dinner Shadowed By War In Gaza"},
-            {id: 4, immagine: "https://placehold.co/224x128", title: 'POLITICS', desc: "The Impeachment Inquiry Against Joe Biden Was Doomed From The Start"}
+            {id: 0, immagine: "https://placehold.co/224x128", title: 'U.S. NEWS', desc: 'Lorem Ipsum'},
+            {id: 1, immagine: "https://placehold.co/224x128", title: 'POLITICS', desc: "Lorem Ipsum"},
+            {id: 2, immagine: "https://placehold.co/224x128", title: 'WORLD NEWS', desc: 'Lorem Ipsum'},
+            {id: 3, immagine: "https://placehold.co/224x128", title: 'POLITICS', desc: "Lorem Ipsum"},
+            {id: 4, immagine: "https://placehold.co/224x128", title: 'POLITICS', desc: "Lorem Ipsum"}
         ]
     };
 
