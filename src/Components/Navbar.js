@@ -3,11 +3,11 @@ import Icon_Profile from '../images/Icon_Profile.png'
 import React, { useState, useEffect} from 'react';
 function NavBar() {
 
-    // Definisci lo stato per gestire il layout della navbar
+    // Definisce lo stato per gestire il layout della navbar
     const [navbarLayout, setNavbarLayout] = useState('horizontal');
     const [isScrolled, setIsScrolled] = useState(false);
 
-    // Definisci una funzione per gestire il ridimensionamento della finestra
+    // Definisce una funzione per gestire il ridimensionamento della finestra
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const handleResize = () => {
         if (window.innerWidth < 605) {
@@ -44,11 +44,11 @@ function NavBar() {
 
     // Utilizza useEffect per aggiungere un listener all'evento di ridimensionamento della finestra
     useEffect(() => {
-        // Aggiungi il listener all'evento di ridimensionamento della finestra
+        // Aggiunge il listener all'evento di ridimensionamento della finestra
         window.addEventListener('resize', handleResize);
         window.addEventListener('scroll', handleScroll);
 
-        // Rimuovi il listener quando il componente viene smontato per evitare memory leak
+        // Rimuove il listener quando il componente viene smontato per evitare memory leak
         return () => {
             window.removeEventListener('resize', handleResize);
             window.removeEventListener('scroll', handleScroll);

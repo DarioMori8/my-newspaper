@@ -1,6 +1,7 @@
 import HorizontalCard from "./HorizontalCard";
 import {Component} from "react";
 import CardNotice from "./CardNotice";
+import  "../Style/ThirdGroupOfNotice.scss"
 
 class ThirdGroupOfNotice extends Component{
 

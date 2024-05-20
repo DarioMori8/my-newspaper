@@ -11,12 +11,12 @@ function FrontPageTop(){
                 </div>
                 <div className="splash__content1  js-card">
                     <a className="splash__headline__link1 js-card"
-                       href="https://www.huffpost.com/entry/donald-trump-hush-money-trial-week-3-live-updates_n_662c149be4b0ab66ede49d55/">COLUMBIA
+                       href="#">COLUMBIA
                         SENDS IN THE COPS</a>
                 </div>
                 <div className="splash__content2  js-card">
                     <a className="splash__headline__link2 js-card"
-                       href="https://www.huffpost.com/entry/donald-trump-hush-money-trial-week-3-live-updates_n_662c149be4b0ab66ede49d55/">HUNDREDS
+                       href="#">HUNDREDS
                         SWARM CAMPUS</a>
                 </div>
                 <div className="splash__content3 ">

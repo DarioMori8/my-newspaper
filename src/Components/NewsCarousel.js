@@ -19,7 +19,7 @@ class NewsCarousel extends Component {
         ]
     };
 
-    // Gestisci il ridimensionamento della finestra del browser
+    // Gestisce il ridimensionamento della finestra del browser
     handleResize = () => {
         this.setState({ windowWidth: window.innerWidth });
     };
@@ -36,9 +36,9 @@ class NewsCarousel extends Component {
         const { cards, cardsPerSlide, windowWidth } = this.state;
 
         // Calcola il numero di card da visualizzare per ogni slide in base alla larghezza della finestra del browser
-        const numCardsPerSlide = windowWidth >= 992 ? cardsPerSlide : 3; // Ad esempio, mostra 6 card se la finestra è larga >= 992px, altrimenti mostra 2 card
+        const numCardsPerSlide = windowWidth >= 992 ? cardsPerSlide : 3; // Ad esempio, mostra 4 card se la finestra è larga >= 992px, altrimenti mostra 3 card
 
-        // Dividi le card in gruppi per ciascuna slide
+        // Divide le card in gruppi per ciascuna slide
         const slides = [];
         for (let i = 0; i < cards.length; i += numCardsPerSlide) {
             slides.push(cards.slice(i, i + numCardsPerSlide));
